@@ -15,7 +15,7 @@ import AboutMe from '../components/AboutMe.astro';
 ---
 
 <Layout title="Anthony Lang (langpi)" description='contrata a langpi para desarrollar tus aplicaciones empresariales con éxito'>
-	<main>
+	<main class="px-4">
 		<SectionContainer id="Inicio" class="py-44 pb-32">
 			<img class="rounded-full size-12 mb-4" src="https://avatars.githubusercontent.com/u/70784250?v=4" alt="">
 			<h1 class="text-white-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hey, Soy Langpi 
@@ -48,34 +48,35 @@ import AboutMe from '../components/AboutMe.astro';
 			  </SocialPill>
 		  </nav>
 		</SectionContainer>
-
+	
 		<SectionContainer id="experiencia">
-			<h2
+		  <h2
 			class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
 		  >
 			<Briefcase class="size-7" />
-			Experiencia
-			<Experience />
+			Experiencia laboral
 		  </h2>
+		  <Experience />
 		</SectionContainer>
+	
 		<SectionContainer id="proyectos">
-			<h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-		<Projects />
-      </h2>
+		  <h2
+			class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
+		  >
+			<CodeIcon class="size-7" />
+			Proyectos
+		  </h2>
+		  <Projects />
 		</SectionContainer>
-
+	
 		<SectionContainer id="mi">
-			<h2
-			  class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
-			>
-			  <ProfileCheck class="size-7" />
-			  Sobre mi
-			</h2>
-			<AboutMe />
-	   </SectionContainer>
-	</main>
+		  <h2
+			class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
+		  >
+			<ProfileCheck class="size-7" />
+			Acerca de Mi
+		  </h2>
+		  <AboutMe />
+		</SectionContainer>
+	  </main>
 </Layout>
