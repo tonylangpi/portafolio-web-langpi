@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingeniería en Sistemas de Información y Ciencias de la Computación - UMG",
+    description:
+      "Estoy estudiando en la Universidad mi Noveno semestre de la carrera de Ingeniería en Sistemas de Información y Ciencias de la Computación en la Universidad Mariano Galvez de Guatemala."
+  },
+  {
+    date: "De Octubre de 2022 a Abril de 2023",
+    title: "Practicas Profesionales  − GPI(Grupo de Profesionales Informaticos)",
+    description:
+      "Responsable de la elaboracion de reporteria en el area bancaria y de la construccion de algunas funcionalidades en modulos de Recursos Humanos",
+    link:"https://gpisistemas.com/"
+  },
+  {
+    date: "De Febrero de 2020 a Febrero de 2021",
+    title: "Tecnico en Reparacion y mantenimiento de computadoras  − INTECAP",
+    description:
+      "Estudie un diplomado tecnico relacionado a la estructura del hardware de las computadoras y su mantenimiento durante un año",
+    link:"https://intecap.edu.gt/certificacionlaboral/certificacionexterna/reparador-de-computadoras/"
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
